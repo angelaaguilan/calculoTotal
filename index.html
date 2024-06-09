@@ -18,22 +18,22 @@
             <p>Cantidad:
                 <span class="cantidad">0</span>
                 <button onclick="
-                    var numeroVar = document.querySelector('.cantidad');
-                    var cuenta = Number(numeroVar.innerHTML);
+                    numeroVar = document.querySelector('.cantidad');
+                    cuenta = Number(numeroVar.innerHTML);
                     cuenta = cuenta + 1;
                     numeroVar.innerHTML = cuenta;
                     calculoPagar = precioInicial.innerHTML;
                     calculoPagar = cuenta * calculoPagar;
-                    precioTotal = document.querySelector('p .valor-total');
+                    precioTotal = document.querySelector('.valor-total');
                     precioTotal.innerHTML= calculoPagar;">+
                 </button>
                 <button onclick="
-                    numeroVar = document.querySelector('p .cantidad');
+                    numeroVar = document.querySelector('.cantidad');
                     cuenta = Number(numeroVar.innerHTML);
                     if (cuenta>0) {
                         cuenta = cuenta - 1;
                         calculoPagar = (calculoPagar - (precioInicial.innerHTML));
-                        precioTotal = document.querySelector('p .valor-total');
+                        precioTotal = document.querySelector('.valor-total');
                         precioTotal.innerHTML= calculoPagar;
                     }
                     numeroVar.innerHTML = cuenta;">-
